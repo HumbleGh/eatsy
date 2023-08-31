@@ -38,8 +38,8 @@ class HomePage extends StatelessWidget {
               ),
               Gap(AppLayout.getHeight(20)),
               const CustomTextField(
-                Label: 'Email',
-                Hint: 'Enter your email',
+                label: 'Email',
+                hint: 'Enter your email',
               )
             ]),
       ),

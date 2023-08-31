@@ -29,7 +29,10 @@ class CustomTextField extends StatelessWidget {
                   color: Colors.grey,
                   width: 1,
                 )),
-            child: Text(Hint),
+            child: Text(
+              Hint,
+              style: Styles.headLineStyle4,
+            ),
           )
         ],
       ),
