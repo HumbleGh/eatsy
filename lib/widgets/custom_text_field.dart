@@ -13,7 +13,7 @@ class CustomTextField extends StatelessWidget {
             'Email',
             style: Styles.headLineStyle3,
           ),
-          TextField()
+          const TextField()
         ],
       ),
     );
