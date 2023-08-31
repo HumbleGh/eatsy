@@ -37,7 +37,7 @@ class HomePage extends StatelessWidget {
                 style: Styles.headLineStyle4.copyWith(color: Colors.grey),
               ),
               Gap(AppLayout.getHeight(20)),
-              CustomTextField(
+              const CustomTextField(
                 Label: 'Email',
                 Hint: 'Enter your email',
               )
