@@ -4,9 +4,9 @@ import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 
 class CustomTextField extends StatelessWidget {
-  final String Label;
-  final String Hint;
-  const CustomTextField({super.key, required this.Label, required this.Hint});
+  final String label;
+  final String hint;
+  const CustomTextField({super.key, required this.label, required this.hint});
 
   @override
   Widget build(BuildContext context) {
@@ -16,8 +16,8 @@ class CustomTextField extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Text(
-            Label,
-            style: TextStyle(fontSize: 18),
+            label,
+            style: const TextStyle(fontSize: 18),
           ),
           Gap(AppLayout.getHeight(8)),
           Container(
@@ -30,7 +30,7 @@ class CustomTextField extends StatelessWidget {
                   width: 1,
                 )),
             child: Text(
-              Hint,
+              hint,
               style: Styles.headLineStyle4,
             ),
           )
