@@ -1,4 +1,5 @@
 import 'package:eatsy/utils/app_style.dart';
+import 'package:eatsy/widgets/custom_text_field.dart';
 import 'package:flutter/material.dart';
 import 'package:eatsy/utils/app_layout.dart';
 import 'package:gap/gap.dart';
@@ -36,21 +37,9 @@ class HomePage extends StatelessWidget {
                 style: Styles.headLineStyle4.copyWith(color: Colors.grey),
               ),
               Gap(AppLayout.getHeight(20)),
-              const Text(
-                'Email',
-                style: TextStyle(fontSize: 18),
-              ),
-              Gap(AppLayout.getHeight(8)),
-              Container(
-                padding: EdgeInsets.all(AppLayout.getHeight(16)),
-                decoration: BoxDecoration(
-                    borderRadius:
-                        BorderRadius.circular(AppLayout.getHeight(12)),
-                    border: Border.all(
-                      color: Colors.grey,
-                      width: 1,
-                    )),
-                child: const Text('Enter your email'),
+              CustomTextField(
+                Label: 'Email',
+                Hint: 'Enter your email',
               )
             ]),
       ),
