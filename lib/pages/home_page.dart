@@ -1,3 +1,4 @@
+import 'package:eatsy/pages/sign_up_screen.dart';
 import 'package:eatsy/utils/app_style.dart';
 import 'package:eatsy/widgets/custom_text_field.dart';
 import 'package:flutter/material.dart';
@@ -13,6 +14,8 @@ class HomePage extends StatelessWidget {
       child: Scaffold(
         // backgroundColor: Styles.bgColor,
         appBar: AppBar(
+          title: Text('Login', style: Styles.headLineStyle1),
+          centerTitle: true,
           backgroundColor: Colors.white,
           elevation: 0.0,
           leading: const Icon(
@@ -22,21 +25,15 @@ class HomePage extends StatelessWidget {
         ),
         body: ListView(
             padding: EdgeInsets.symmetric(
-                vertical: AppLayout.getHeight(20),
+                vertical: AppLayout.getHeight(12),
                 horizontal: AppLayout.getHeight(20)),
             children: [
-              Text(
-                'Login',
-                style: Styles.headLineStyle1,
-                textAlign: TextAlign.center,
-              ),
-              Gap(AppLayout.getHeight(8)),
               Text(
                 'Enter your details to continue',
                 textAlign: TextAlign.center,
                 style: Styles.headLineStyle4.copyWith(color: Colors.grey),
               ),
-              Gap(AppLayout.getHeight(20)),
+              Gap(AppLayout.getHeight(40)),
               const CustomTextField(
                 label: 'Email',
                 hint: 'Enter your email',
@@ -63,8 +60,14 @@ class HomePage extends StatelessWidget {
                 textAlign: TextAlign.center,
               ),
               Gap(AppLayout.getHeight(8)),
-              GestureDetector(
-                onTap: () {},
+
+              TextButton(
+                onPressed: () {
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => const SignUpScreen()));
+                },
                 child: Text(
                   'Sign up',
                   style: TextStyle(color: Colors.blue[500], fontSize: 16),
