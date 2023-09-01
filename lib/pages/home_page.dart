@@ -40,7 +40,37 @@ class HomePage extends StatelessWidget {
               const CustomTextField(
                 label: 'Email',
                 hint: 'Enter your email',
-              )
+              ),
+              Gap(AppLayout.getHeight(20)),
+              const CustomTextField(
+                  label: 'Password', hint: 'Enter your password'),
+              Gap(AppLayout.getHeight(40)),
+              //Log in button
+              Container(
+                padding: EdgeInsets.all(AppLayout.getHeight(20)),
+                decoration: BoxDecoration(
+                    color: Colors.blue,
+                    borderRadius: BorderRadius.circular(12)),
+                child: Text('Log in',
+                    textAlign: TextAlign.center,
+                    style: Styles.headLineStyle2.copyWith(color: Colors.white)),
+              ),
+
+              Gap(AppLayout.getHeight(16)),
+              Text(
+                'Don\'t have an account?',
+                style: Styles.headLineStyle3,
+                textAlign: TextAlign.center,
+              ),
+              Gap(AppLayout.getHeight(8)),
+              GestureDetector(
+                onTap: () {},
+                child: Text(
+                  'Sign up',
+                  style: TextStyle(color: Colors.blue[500], fontSize: 16),
+                  textAlign: TextAlign.center,
+                ),
+              ),
             ]),
       ),
     );
