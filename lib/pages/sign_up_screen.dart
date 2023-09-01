@@ -1,3 +1,4 @@
+import 'package:eatsy/utils/app_style.dart';
 import 'package:flutter/material.dart';
 
 class SignUpScreen extends StatefulWidget {
@@ -10,6 +11,20 @@ class SignUpScreen extends StatefulWidget {
 class _SignUpScreenState extends State<SignUpScreen> {
   @override
   Widget build(BuildContext context) {
-    return const Scaffold();
+    return Scaffold(
+      appBar: AppBar(
+        backgroundColor: Colors.white,
+        elevation: 0.0,
+        leading: IconButton(
+            onPressed: () {
+              Navigator.pop(context);
+            },
+            icon: const Icon(Icons.arrow_back_ios),
+            color: Colors.black),
+        title: Text('Sign up',
+            style: Styles.headLineStyle1.copyWith(color: Colors.black)),
+        centerTitle: true,
+      ),
+    );
   }
 }
