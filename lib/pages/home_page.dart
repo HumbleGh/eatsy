@@ -12,7 +12,7 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
-        // backgroundColor: Styles.bgColor,
+        backgroundColor: Colors.white,
         appBar: AppBar(
           title: Text('Login', style: Styles.headLineStyle1),
           centerTitle: true,
@@ -25,7 +25,7 @@ class HomePage extends StatelessWidget {
         ),
         body: ListView(
             padding: EdgeInsets.symmetric(
-                vertical: AppLayout.getHeight(12),
+                vertical: AppLayout.getHeight(0),
                 horizontal: AppLayout.getHeight(20)),
             children: [
               Text(
