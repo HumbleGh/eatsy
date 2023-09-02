@@ -19,10 +19,6 @@ class HomePage extends StatelessWidget {
           centerTitle: true,
           backgroundColor: Colors.white,
           elevation: 0.0,
-          leading: const Icon(
-            Icons.arrow_back_ios,
-            color: Colors.black,
-          ),
         ),
         body: ListView(
             padding: EdgeInsets.symmetric(
@@ -44,7 +40,8 @@ class HomePage extends StatelessWidget {
                   label: 'Password', hint: 'Enter your password'),
               Gap(AppLayout.getHeight(40)),
               //Log in button
-              const ButtonText(text: 'Log in'),
+              MaterialButton(
+                  onPressed: () {}, child: const ButtonText(text: 'Log in')),
 
               Gap(AppLayout.getHeight(16)),
               Text(
@@ -52,7 +49,6 @@ class HomePage extends StatelessWidget {
                 style: Styles.headLineStyle3,
                 textAlign: TextAlign.center,
               ),
-              // Gap(AppLayout.getHeight(2)),
 
               TextButton(
                 onPressed: () {
