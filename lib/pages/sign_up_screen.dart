@@ -51,6 +51,10 @@ class _SignUpScreenState extends State<SignUpScreen> {
           const CustomTextField(label: 'Password', hint: 'Enter your email'),
           Gap(AppLayout.getHeight(20)),
           const CustomTextField(label: 'Password', hint: 'Enter your password'),
+          Gap(AppLayout.getHeight(20)),
+          const CustomTextField(
+              label: 'Mobile Number', hint: 'Enter Mobile Number'),
+          Gap(AppLayout.getHeight(40))
         ],
       ),
     );
