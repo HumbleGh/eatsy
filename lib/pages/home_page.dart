@@ -1,5 +1,6 @@
 import 'package:eatsy/pages/sign_up_screen.dart';
 import 'package:eatsy/utils/app_style.dart';
+import 'package:eatsy/widgets/button_text.dart';
 import 'package:eatsy/widgets/custom_text_field.dart';
 import 'package:flutter/material.dart';
 import 'package:eatsy/utils/app_layout.dart';
@@ -43,15 +44,16 @@ class HomePage extends StatelessWidget {
                   label: 'Password', hint: 'Enter your password'),
               Gap(AppLayout.getHeight(40)),
               //Log in button
-              Container(
-                padding: EdgeInsets.all(AppLayout.getHeight(20)),
-                decoration: BoxDecoration(
-                    color: Colors.blue,
-                    borderRadius: BorderRadius.circular(12)),
-                child: Text('Log in',
-                    textAlign: TextAlign.center,
-                    style: Styles.headLineStyle2.copyWith(color: Colors.white)),
-              ),
+              const ButtonText(text: 'Log in'),
+              // Container(
+              //   padding: EdgeInsets.all(AppLayout.getHeight(20)),
+              //   decoration: BoxDecoration(
+              //       color: Colors.blue,
+              //       borderRadius: BorderRadius.circular(12)),
+              //   child: Text('Log in',
+              //       textAlign: TextAlign.center,
+              //       style: Styles.headLineStyle2.copyWith(color: Colors.white)),
+              // ),
 
               Gap(AppLayout.getHeight(16)),
               Text(

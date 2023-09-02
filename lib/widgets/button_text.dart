@@ -16,7 +16,7 @@ class ButtonText extends StatelessWidget {
       child: MaterialButton(
         onPressed: () {},
         child: Text(
-          'Create account',
+          text,
           style: Styles.headLineStyle2.copyWith(color: Colors.white),
         ),
       ),
