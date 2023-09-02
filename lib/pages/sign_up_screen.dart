@@ -1,3 +1,4 @@
+import 'package:eatsy/pages/home_page.dart';
 import 'package:eatsy/utils/app_layout.dart';
 import 'package:eatsy/utils/app_style.dart';
 import 'package:eatsy/widgets/button_text.dart';
@@ -103,7 +104,18 @@ class _SignUpScreenState extends State<SignUpScreen> {
                 style: TextStyle(color: Colors.blue),
               ),
             ],
-          )
+          ),
+          TextButton(
+            onPressed: () {
+              Navigator.push(context,
+                  MaterialPageRoute(builder: (context) => const HomePage()));
+            },
+            child: Text(
+              'Sign in',
+              style: TextStyle(color: Colors.blue[500], fontSize: 16),
+              textAlign: TextAlign.center,
+            ),
+          ),
         ],
       ),
     );
