@@ -45,15 +45,6 @@ class HomePage extends StatelessWidget {
               Gap(AppLayout.getHeight(40)),
               //Log in button
               const ButtonText(text: 'Log in'),
-              // Container(
-              //   padding: EdgeInsets.all(AppLayout.getHeight(20)),
-              //   decoration: BoxDecoration(
-              //       color: Colors.blue,
-              //       borderRadius: BorderRadius.circular(12)),
-              //   child: Text('Log in',
-              //       textAlign: TextAlign.center,
-              //       style: Styles.headLineStyle2.copyWith(color: Colors.white)),
-              // ),
 
               Gap(AppLayout.getHeight(16)),
               Text(
@@ -61,7 +52,7 @@ class HomePage extends StatelessWidget {
                 style: Styles.headLineStyle3,
                 textAlign: TextAlign.center,
               ),
-              Gap(AppLayout.getHeight(8)),
+              // Gap(AppLayout.getHeight(2)),
 
               TextButton(
                 onPressed: () {
