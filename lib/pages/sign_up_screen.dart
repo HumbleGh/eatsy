@@ -6,6 +6,7 @@ import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 
 class SignUpScreen extends StatefulWidget {
+  static bool? isColor;
   const SignUpScreen({super.key});
 
   @override
@@ -56,7 +57,53 @@ class _SignUpScreenState extends State<SignUpScreen> {
           const CustomTextField(
               label: 'Mobile Number', hint: 'Enter Mobile Number'),
           Gap(AppLayout.getHeight(40)),
-          const ButtonText(text: 'Create account')
+          const ButtonText(text: 'Create account'),
+          Gap(AppLayout.getHeight(20)),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              GestureDetector(
+                onTap: () {},
+                child: Container(
+                  height: AppLayout.getHeight(16),
+                  width: AppLayout.getHeight(16),
+                  decoration: BoxDecoration(
+                      border: Border.all(width: 1, color: Colors.grey)),
+                ),
+              ),
+              Gap(AppLayout.getHeight(10)),
+              Text(
+                'Send me travel tips and promotion via email',
+                style: Styles.headLineStyle4,
+              ),
+            ],
+          ),
+          Gap(AppLayout.getHeight(12)),
+          Text(
+            'By creating an account, you accept our',
+            textAlign: TextAlign.center,
+            style: Styles.headLineStyle4,
+          ),
+          Gap(AppLayout.getHeight(6)),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              const Text(
+                'Terms ',
+                style: TextStyle(color: Colors.blue),
+              ),
+              Gap(AppLayout.getHeight(4)),
+              Text(
+                'and ',
+                style: Styles.headLineStyle4,
+              ),
+              Gap(AppLayout.getHeight(4)),
+              const Text(
+                'Privacy Policy',
+                style: TextStyle(color: Colors.blue),
+              ),
+            ],
+          )
         ],
       ),
     );

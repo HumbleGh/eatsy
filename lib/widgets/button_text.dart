@@ -10,12 +10,16 @@ class ButtonText extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: EdgeInsets.all(AppLayout.getHeight(20)),
+      padding: EdgeInsets.all(AppLayout.getHeight(8)),
       decoration: BoxDecoration(
-          color: Colors.blue, borderRadius: BorderRadius.circular(12)),
-      child: Text(text,
-          textAlign: TextAlign.center,
-          style: Styles.headLineStyle2.copyWith(color: Colors.white)),
+          borderRadius: BorderRadius.circular(12), color: Colors.blue),
+      child: MaterialButton(
+        onPressed: () {},
+        child: Text(
+          'Create account',
+          style: Styles.headLineStyle2.copyWith(color: Colors.white),
+        ),
+      ),
     );
   }
 }
