@@ -105,6 +105,12 @@ class _SignUpScreenState extends State<SignUpScreen> {
               ),
             ],
           ),
+          Gap(AppLayout.getHeight(20)),
+          Text(
+            'Already have an account?',
+            style: Styles.headLineStyle3,
+            textAlign: TextAlign.center,
+          ),
           TextButton(
             onPressed: () {
               Navigator.push(context,
