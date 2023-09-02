@@ -1,5 +1,6 @@
 import 'package:eatsy/utils/app_layout.dart';
 import 'package:eatsy/utils/app_style.dart';
+import 'package:eatsy/widgets/button_text.dart';
 import 'package:eatsy/widgets/custom_text_field.dart';
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
@@ -54,7 +55,8 @@ class _SignUpScreenState extends State<SignUpScreen> {
           Gap(AppLayout.getHeight(20)),
           const CustomTextField(
               label: 'Mobile Number', hint: 'Enter Mobile Number'),
-          Gap(AppLayout.getHeight(40))
+          Gap(AppLayout.getHeight(40)),
+          const ButtonText(text: 'Create account')
         ],
       ),
     );
