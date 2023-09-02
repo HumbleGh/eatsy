@@ -1,3 +1,4 @@
+import 'package:eatsy/utils/app_layout.dart';
 import 'package:eatsy/utils/app_style.dart';
 import 'package:flutter/material.dart';
 
@@ -21,9 +22,20 @@ class _SignUpScreenState extends State<SignUpScreen> {
             },
             icon: const Icon(Icons.arrow_back_ios),
             color: Colors.black),
-        title: Text('Sign up',
-            style: Styles.headLineStyle1.copyWith(color: Colors.black)),
+        title: Text(
+          'Create Acoount',
+          style: Styles.headLineStyle2,
+          textAlign: TextAlign.center,
+        ),
         centerTitle: true,
+      ),
+      body: SafeArea(
+        child: ListView(
+          padding: EdgeInsets.symmetric(
+              horizontal: AppLayout.getHeight(20),
+              vertical: AppLayout.getHeight(20)),
+          children: [],
+        ),
       ),
     );
   }
