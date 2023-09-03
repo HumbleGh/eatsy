@@ -1,6 +1,6 @@
 import 'package:eatsy/pages/sign_up_screen.dart';
+import 'package:eatsy/screens/welcome_screen.dart';
 import 'package:eatsy/utils/app_style.dart';
-import 'package:eatsy/widgets/button_text.dart';
 import 'package:eatsy/widgets/custom_text_field.dart';
 import 'package:flutter/material.dart';
 import 'package:eatsy/utils/app_layout.dart';
@@ -40,9 +40,25 @@ class HomePage extends StatelessWidget {
                   label: 'Password', hint: 'Enter your password'),
               Gap(AppLayout.getHeight(40)),
               //Log in button
-              MaterialButton(
-                  onPressed: () {}, child: const ButtonText(text: 'Log in')),
-
+              Container(
+                decoration: BoxDecoration(
+                    color: Colors.blue,
+                    borderRadius: BorderRadius.circular(12)),
+                padding: EdgeInsets.all(AppLayout.getHeight(8)),
+                child: TextButton(
+                  onPressed: () {
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => const WelcomeScreen()));
+                  },
+                  child: Text(
+                    'Log in',
+                    style: Styles.headLineStyle2.copyWith(color: Colors.white),
+                    textAlign: TextAlign.center,
+                  ),
+                ),
+              ),
               Gap(AppLayout.getHeight(16)),
               Text(
                 'Don\'t have an account?',
@@ -63,6 +79,8 @@ class HomePage extends StatelessWidget {
                   textAlign: TextAlign.center,
                 ),
               ),
+
+              Gap(AppLayout.getHeight(20)),
             ]),
       ),
     );

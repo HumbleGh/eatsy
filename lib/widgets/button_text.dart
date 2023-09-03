@@ -10,6 +10,7 @@ class ButtonText extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
+      width: double.infinity,
       padding: EdgeInsets.all(AppLayout.getHeight(8)),
       decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(12), color: Colors.blue),

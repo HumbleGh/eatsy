@@ -58,7 +58,9 @@ class _SignUpScreenState extends State<SignUpScreen> {
           const CustomTextField(
               label: 'Mobile Number', hint: 'Enter Mobile Number'),
           Gap(AppLayout.getHeight(40)),
-          const ButtonText(text: 'Create account'),
+          const ButtonText(
+            text: 'Create account',
+          ),
           Gap(AppLayout.getHeight(20)),
           Row(
             mainAxisAlignment: MainAxisAlignment.center,
