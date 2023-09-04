@@ -4,7 +4,9 @@ import '../utils/app_layout.dart';
 import '../utils/app_style.dart';
 
 class FancyIconText extends StatelessWidget {
-  const FancyIconText({super.key});
+  final String emoji;
+  final String text;
+  const FancyIconText({super.key, required this.emoji, required this.text});
 
   @override
   Widget build(BuildContext context) {
@@ -23,15 +25,15 @@ class FancyIconText extends StatelessWidget {
                   borderRadius: BorderRadius.circular(12),
                   color: Colors.blue[500],
                 ),
-                child: const Text(
-                  '😔',
+                child: Text(
+                  emoji,
                   textAlign: TextAlign.center,
                   style: TextStyle(fontSize: 35),
                 ),
               ),
               Gap(AppLayout.getHeight(10)),
               Text(
-                'Bad',
+                text,
                 style: Styles.headLineStyle3.copyWith(color: Colors.white),
               )
             ],

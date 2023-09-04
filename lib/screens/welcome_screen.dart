@@ -90,10 +90,10 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
-                const FancyIconText(),
-                const FancyIconText(),
-                const FancyIconText(),
-                const FancyIconText(),
+                FancyIconText(emoji: '😔', text: 'Sad'),
+                FancyIconText(emoji: '😔', text: 'Fine'),
+                FancyIconText(emoji: '😔', text: 'Well'),
+                FancyIconText(emoji: '😔', text: 'Excellent'),
               ],
             )
           ],
