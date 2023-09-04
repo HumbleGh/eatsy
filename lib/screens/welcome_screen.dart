@@ -101,7 +101,7 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
                           borderRadius: BorderRadius.circular(12),
                           color: Colors.blue[500],
                         ),
-                        child: Text(
+                        child: const Text(
                           '😔',
                           textAlign: TextAlign.center,
                           style: TextStyle(fontSize: 35),
