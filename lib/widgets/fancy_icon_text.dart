@@ -3,8 +3,8 @@ import 'package:gap/gap.dart';
 import '../utils/app_layout.dart';
 import '../utils/app_style.dart';
 
-class IconText extends StatelessWidget {
-  const IconText({super.key});
+class FancyIconText extends StatelessWidget {
+  const FancyIconText({super.key});
 
   @override
   Widget build(BuildContext context) {
