@@ -9,7 +9,7 @@ class FancyIconText extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: EdgeInsets.symmetric(horizontal: AppLayout.getHeight(20)),
+      // padding: EdgeInsets.symmetric(horizontal: AppLayout.getHeight(1)),
       child: Row(
         children: [
           Column(

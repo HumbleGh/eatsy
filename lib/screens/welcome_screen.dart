@@ -1,5 +1,6 @@
 import 'package:eatsy/utils/app_layout.dart';
 import 'package:eatsy/utils/app_style.dart';
+import 'package:eatsy/widgets/fancy_icon_text.dart';
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 
@@ -86,6 +87,15 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
               text: 'How do you feel?',
             ),
             Gap(AppLayout.getHeight(30)),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              children: [
+                const FancyIconText(),
+                const FancyIconText(),
+                const FancyIconText(),
+                const FancyIconText(),
+              ],
+            )
           ],
         ));
   }
