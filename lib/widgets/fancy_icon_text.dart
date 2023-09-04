@@ -10,36 +10,34 @@ class FancyIconText extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      child: Row(
-        children: [
-          Column(
-            children: [
-              Container(
-                height: AppLayout.getHeight(80),
-                width: AppLayout.getHeight(80),
-                padding: EdgeInsets.symmetric(
-                    horizontal: AppLayout.getHeight(20),
-                    vertical: AppLayout.getHeight(20)),
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(12),
-                  color: Colors.blue[500],
-                ),
-                child: Text(
-                  emoji,
-                  textAlign: TextAlign.center,
-                  style: TextStyle(fontSize: 35),
-                ),
+    return Row(
+      children: [
+        Column(
+          children: [
+            Container(
+              height: AppLayout.getHeight(80),
+              width: AppLayout.getHeight(80),
+              padding: EdgeInsets.symmetric(
+                  horizontal: AppLayout.getHeight(20),
+                  vertical: AppLayout.getHeight(20)),
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(12),
+                color: Colors.blue[500],
               ),
-              Gap(AppLayout.getHeight(10)),
-              Text(
-                text,
-                style: Styles.headLineStyle3.copyWith(color: Colors.white),
-              )
-            ],
-          )
-        ],
-      ),
+              child: Text(
+                emoji,
+                textAlign: TextAlign.center,
+                style: const TextStyle(fontSize: 35),
+              ),
+            ),
+            Gap(AppLayout.getHeight(10)),
+            Text(
+              text,
+              style: Styles.headLineStyle3.copyWith(color: Colors.white),
+            )
+          ],
+        )
+      ],
     );
   }
 }

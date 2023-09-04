@@ -87,15 +87,26 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
               text: 'How do you feel?',
             ),
             Gap(AppLayout.getHeight(30)),
-            Row(
+            const Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
-                FancyIconText(emoji: '😔', text: 'Sad'),
-                FancyIconText(emoji: '😔', text: 'Fine'),
-                FancyIconText(emoji: '😔', text: 'Well'),
-                FancyIconText(emoji: '😔', text: 'Excellent'),
+                FancyIconText(emoji: '😩', text: 'Sad'),
+                FancyIconText(emoji: '😒', text: 'Fine'),
+                FancyIconText(emoji: '😊', text: 'Well'),
+                FancyIconText(emoji: '😀', text: 'Excellent'),
               ],
-            )
+            ),
+            Gap(AppLayout.getHeight(30)),
+            // SizedBox(
+            //   height: double.infinity,
+            //   width: double.infinity,
+            //   child: Container(
+            //     decoration: BoxDecoration(color: Colors.white),
+            //     child: Column(
+            //       children: [const TextMore(text: 'Exercises')],
+            //     ),
+            //   ),
+            // )
           ],
         ));
   }
