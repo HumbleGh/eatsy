@@ -86,38 +86,6 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
               text: 'How do you feel?',
             ),
             Gap(AppLayout.getHeight(30)),
-            Container(
-              padding: EdgeInsets.symmetric(horizontal: 20),
-              child: Row(
-                children: [
-                  Column(
-                    children: [
-                      Container(
-                        height: 80,
-                        width: 80,
-                        padding:
-                            EdgeInsets.symmetric(horizontal: 20, vertical: 20),
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(12),
-                          color: Colors.blue[500],
-                        ),
-                        child: const Text(
-                          '😔',
-                          textAlign: TextAlign.center,
-                          style: TextStyle(fontSize: 35),
-                        ),
-                      ),
-                      Gap(AppLayout.getHeight(10)),
-                      Text(
-                        'Bad',
-                        style:
-                            Styles.headLineStyle3.copyWith(color: Colors.white),
-                      )
-                    ],
-                  )
-                ],
-              ),
-            )
           ],
         ));
   }
