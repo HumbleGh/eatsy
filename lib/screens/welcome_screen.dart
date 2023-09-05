@@ -103,7 +103,7 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
                       EdgeInsets.symmetric(horizontal: AppLayout.getHeight(20)),
                   decoration: BoxDecoration(color: Colors.red),
                   child: const TextMore(text: 'Exerccise')),
-            )
+            ),
           ],
         ));
   }
