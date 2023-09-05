@@ -45,7 +45,7 @@ class _NewPageState extends State<NewPage> {
                     )
                   ],
                 ),
-                Text('Hey')
+                const Text('Hey')
               ],
             ),
           ),

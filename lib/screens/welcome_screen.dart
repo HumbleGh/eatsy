@@ -1,4 +1,3 @@
-import 'package:eatsy/pages/new_page.dart';
 import 'package:eatsy/utils/app_layout.dart';
 import 'package:eatsy/utils/app_style.dart';
 import 'package:eatsy/widgets/fancy_icon_text.dart';
@@ -123,9 +122,17 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
               Expanded(
                 child: Container(
                     padding: EdgeInsets.symmetric(
-                        horizontal: AppLayout.getHeight(20)),
+                        horizontal: AppLayout.getHeight(20), vertical: 20),
                     decoration: const BoxDecoration(color: Colors.white),
-                    child: Container()),
+                    child: Column(
+                      children: [
+                        const TextMore(
+                          text: 'Exercises',
+                          isColorWhite: false,
+                        ),
+                        Gap(AppLayout.getHeight(20)),
+                      ],
+                    )),
               ),
             ],
           )),
