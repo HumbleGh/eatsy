@@ -1,3 +1,4 @@
+import 'package:eatsy/pages/new_page.dart';
 import 'package:eatsy/utils/app_layout.dart';
 import 'package:eatsy/utils/app_style.dart';
 import 'package:eatsy/widgets/fancy_icon_text.dart';
@@ -85,6 +86,7 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
             Gap(AppLayout.getHeight(30)),
             const TextMore(
               text: 'How do you feel?',
+              isColorWhite: true,
             ),
             Gap(AppLayout.getHeight(30)),
             const Row(
@@ -97,12 +99,30 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
               ],
             ),
             Gap(AppLayout.getHeight(30)),
+            Container(
+              decoration: BoxDecoration(
+                  color: Colors.blue, borderRadius: BorderRadius.circular(12)),
+              padding: EdgeInsets.all(AppLayout.getHeight(8)),
+              child: TextButton(
+                onPressed: () {
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => const NewPage()));
+                },
+                child: Text(
+                  'New Page',
+                  style: Styles.headLineStyle2.copyWith(color: Colors.white),
+                  textAlign: TextAlign.center,
+                ),
+              ),
+            ),
             Expanded(
               child: Container(
                   padding:
                       EdgeInsets.symmetric(horizontal: AppLayout.getHeight(20)),
-                  decoration: BoxDecoration(color: Colors.red),
-                  child: const TextMore(text: 'Exerccise')),
+                  decoration: const BoxDecoration(color: Colors.red),
+                  child: Container(
+                    height: 500,
+                  )),
             ),
           ],
         ));

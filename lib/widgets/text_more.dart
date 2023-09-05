@@ -5,8 +5,9 @@ import '../utils/app_style.dart';
 
 class TextMore extends StatelessWidget {
   final String text;
+  final bool? isColorWhite;
 
-  const TextMore({super.key, required this.text});
+  const TextMore({super.key, required this.text, required this.isColorWhite});
 
   @override
   Widget build(BuildContext context) {
