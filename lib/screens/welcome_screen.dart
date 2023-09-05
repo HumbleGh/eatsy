@@ -97,16 +97,13 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
               ],
             ),
             Gap(AppLayout.getHeight(30)),
-            // SizedBox(
-            //   height: double.infinity,
-            //   width: double.infinity,
-            //   child: Container(
-            //     decoration: BoxDecoration(color: Colors.white),
-            //     child: Column(
-            //       children: [const TextMore(text: 'Exercises')],
-            //     ),
-            //   ),
-            // )
+            Expanded(
+              child: Container(
+                  padding:
+                      EdgeInsets.symmetric(horizontal: AppLayout.getHeight(20)),
+                  decoration: BoxDecoration(color: Colors.red),
+                  child: const TextMore(text: 'Exerccise')),
+            )
           ],
         ));
   }
