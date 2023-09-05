@@ -122,8 +122,9 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
               Expanded(
                 child: Container(
                     padding: EdgeInsets.symmetric(
-                        horizontal: AppLayout.getHeight(20), vertical: 20),
-                    decoration: const BoxDecoration(color: Colors.white),
+                        horizontal: AppLayout.getHeight(0), vertical: 20),
+                    decoration: BoxDecoration(
+                        color: Color.fromARGB(255, 222, 222, 222)),
                     child: Column(
                       children: [
                         const TextMore(
@@ -131,6 +132,13 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
                           isColorWhite: false,
                         ),
                         Gap(AppLayout.getHeight(20)),
+                        Container(
+                          padding: EdgeInsets.symmetric(
+                              horizontal: AppLayout.getHeight(20),
+                              vertical: AppLayout.getHeight(20)),
+                          decoration: BoxDecoration(color: Colors.white),
+                          child: Icon(Icons.heart_broken_rounded),
+                        ),
                       ],
                     )),
               ),
