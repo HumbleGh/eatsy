@@ -123,7 +123,7 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
                 child: Container(
                     padding: EdgeInsets.symmetric(
                         horizontal: AppLayout.getHeight(0), vertical: 20),
-                    decoration: BoxDecoration(
+                    decoration: const BoxDecoration(
                         color: Color.fromARGB(255, 222, 222, 222)),
                     child: Column(
                       children: [
@@ -136,8 +136,8 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
                           padding: EdgeInsets.symmetric(
                               horizontal: AppLayout.getHeight(20),
                               vertical: AppLayout.getHeight(20)),
-                          decoration: BoxDecoration(color: Colors.white),
-                          child: Icon(Icons.heart_broken_rounded),
+                          decoration: const BoxDecoration(color: Colors.white),
+                          child: const Icon(Icons.heart_broken_rounded),
                         ),
                       ],
                     )),
