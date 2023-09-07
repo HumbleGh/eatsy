@@ -102,26 +102,73 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
               Gap(AppLayout.getHeight(30)),
               Expanded(
                 child: Container(
-                    padding: EdgeInsets.symmetric(
-                        horizontal: AppLayout.getHeight(0), vertical: 20),
-                    decoration: const BoxDecoration(
-                        color: Color.fromARGB(255, 222, 222, 222)),
-                    child: Column(
-                      children: [
-                        const TextMore(
-                          text: 'Exercises',
-                          isColorWhite: false,
+                  padding:
+                      EdgeInsets.symmetric(vertical: AppLayout.getHeight(30)),
+                  decoration: const BoxDecoration(
+                      borderRadius:
+                          BorderRadius.vertical(top: Radius.circular(24)),
+                      color: Color.fromARGB(255, 222, 222, 222)),
+                  child: Column(
+                    children: [
+                      const TextMore(
+                        text: 'Exercises',
+                        isColorWhite: false,
+                      ),
+                      Gap(AppLayout.getHeight(20)),
+                      Container(
+                        margin: EdgeInsets.symmetric(
+                            horizontal: AppLayout.getHeight(20)),
+                        padding: EdgeInsets.symmetric(
+                            horizontal: AppLayout.getHeight(20),
+                            vertical: AppLayout.getHeight(20)),
+                        decoration: BoxDecoration(
+                            color: Colors.white,
+                            borderRadius: BorderRadius.circular(12)),
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: [
+                            // ignore: avoid_unnecessary_containers
+                            Container(
+                              child: Row(
+                                children: [
+                                  Container(
+                                    padding:
+                                        EdgeInsets.all(AppLayout.getHeight(14)),
+                                    decoration: BoxDecoration(
+                                        color: Colors.orange,
+                                        borderRadius: BorderRadius.circular(
+                                            AppLayout.getHeight(10))),
+                                    child: const Icon(
+                                      Icons.man,
+                                      color: Colors.white,
+                                    ),
+                                  ),
+                                  Gap(AppLayout.getHeight(12)),
+                                  Column(
+                                    crossAxisAlignment:
+                                        CrossAxisAlignment.start,
+                                    children: [
+                                      Text(
+                                        'Speaking Skillz',
+                                        style: Styles.headLineStyle2,
+                                      ),
+                                      Gap(AppLayout.getHeight(5)),
+                                      Text(
+                                        '16 Exercises',
+                                        style: Styles.headLineStyle4,
+                                      ),
+                                    ],
+                                  )
+                                ],
+                              ),
+                            ),
+                            const Icon(Icons.more_horiz)
+                          ],
                         ),
-                        Gap(AppLayout.getHeight(20)),
-                        Container(
-                          padding: EdgeInsets.symmetric(
-                              horizontal: AppLayout.getHeight(20),
-                              vertical: AppLayout.getHeight(20)),
-                          decoration: const BoxDecoration(color: Colors.white),
-                          child: const Icon(Icons.heart_broken_rounded),
-                        ),
-                      ],
-                    )),
+                      ),
+                    ],
+                  ),
+                ),
               ),
             ],
           )),
