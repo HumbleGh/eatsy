@@ -116,7 +116,6 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
                         isColorWhite: false,
                       ),
                       Gap(AppLayout.getHeight(20)),
-                      ExerciseTile(title: 'Speaking Skillz', exercise: 16)
                     ],
                   ),
                 ),
