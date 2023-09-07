@@ -6,7 +6,15 @@ import 'package:gap/gap.dart';
 class ExerciseTile extends StatelessWidget {
   final String title;
   final int exercise;
-  const ExerciseTile({super.key, required this.title, required this.exercise});
+  // ignore: prefer_typing_uninitialized_variables
+  final icon;
+  final color;
+  const ExerciseTile(
+      {super.key,
+      required this.title,
+      required this.exercise,
+      this.color,
+      required this.icon});
 
   @override
   Widget build(BuildContext context) {
@@ -30,8 +38,8 @@ class ExerciseTile extends StatelessWidget {
                       color: Colors.orange,
                       borderRadius:
                           BorderRadius.circular(AppLayout.getHeight(10))),
-                  child: const Icon(
-                    Icons.man,
+                  child: Icon(
+                    icon,
                     color: Colors.white,
                   ),
                 ),

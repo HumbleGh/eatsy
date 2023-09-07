@@ -122,21 +122,32 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
                       isColorWhite: false,
                     ),
                     Gap(AppLayout.getHeight(20)),
-                    Container(
-                        child: Scrollbar(
+                    Scrollbar(
                       // Wrap the ListView with a Scrollbar
                       child: ListView(
                         shrinkWrap: true, // Add this line
                         children: [
-                          ExerciseTile(title: 'Yeah', exercise: 12),
+                          const ExerciseTile(
+                            title: 'Yeah',
+                            exercise: 12,
+                            icon: Icons.favorite,
+                          ),
                           Gap(AppLayout.getHeight(12)),
-                          ExerciseTile(title: 'Yeah', exercise: 12),
+                          const ExerciseTile(
+                            title: 'Yeah',
+                            exercise: 12,
+                            icon: Icons.graphic_eq,
+                          ),
                           Gap(AppLayout.getHeight(12)),
-                          ExerciseTile(title: 'Yeah', exercise: 12),
+                          const ExerciseTile(
+                            title: 'Yeah',
+                            exercise: 12,
+                            icon: Icons.abc,
+                          ),
                           Gap(AppLayout.getHeight(12)),
                         ],
                       ),
-                    ))
+                    )
                   ]),
                 ),
               )),
