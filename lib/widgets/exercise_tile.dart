@@ -8,6 +8,7 @@ class ExerciseTile extends StatelessWidget {
   final int exercise;
   // ignore: prefer_typing_uninitialized_variables
   final icon;
+  // ignore: prefer_typing_uninitialized_variables
   final color;
   const ExerciseTile(
       {super.key,
@@ -35,7 +36,7 @@ class ExerciseTile extends StatelessWidget {
                 Container(
                   padding: EdgeInsets.all(AppLayout.getHeight(14)),
                   decoration: BoxDecoration(
-                      color: Colors.orange,
+                      color: color,
                       borderRadius:
                           BorderRadius.circular(AppLayout.getHeight(10))),
                   child: Icon(

@@ -130,18 +130,21 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
                           const ExerciseTile(
                             title: 'Yeah',
                             exercise: 12,
+                            color: Colors.blue,
                             icon: Icons.favorite,
                           ),
                           Gap(AppLayout.getHeight(12)),
                           const ExerciseTile(
                             title: 'Yeah',
                             exercise: 12,
+                            color: Colors.green,
                             icon: Icons.graphic_eq,
                           ),
                           Gap(AppLayout.getHeight(12)),
                           const ExerciseTile(
                             title: 'Yeah',
                             exercise: 12,
+                            color: Colors.orange,
                             icon: Icons.abc,
                           ),
                           Gap(AppLayout.getHeight(12)),
