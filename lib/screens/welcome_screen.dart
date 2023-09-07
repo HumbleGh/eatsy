@@ -100,25 +100,6 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
                 ],
               ),
               Gap(AppLayout.getHeight(30)),
-              // Container(
-              //   decoration: BoxDecoration(
-              //       color: Colors.blue,
-              //       borderRadius: BorderRadius.circular(12)),
-              //   padding: EdgeInsets.all(AppLayout.getHeight(8)),
-              //   child: TextButton(
-              //     onPressed: () {
-              //       Navigator.push(
-              //           context,
-              //           MaterialPageRoute(
-              //               builder: (context) => const NewPage()));
-              //     },
-              //     child: Text(
-              //       'New Page',
-              //       style: Styles.headLineStyle2.copyWith(color: Colors.white),
-              //       textAlign: TextAlign.center,
-              //     ),
-              //   ),
-              // ),
               Expanded(
                 child: Container(
                     padding: EdgeInsets.symmetric(
