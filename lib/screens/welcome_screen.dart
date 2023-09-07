@@ -119,8 +119,8 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
                         margin: EdgeInsets.symmetric(
                             horizontal: AppLayout.getHeight(20)),
                         padding: EdgeInsets.symmetric(
-                            horizontal: AppLayout.getHeight(20),
-                            vertical: AppLayout.getHeight(20)),
+                            horizontal: AppLayout.getHeight(16),
+                            vertical: AppLayout.getHeight(16)),
                         decoration: BoxDecoration(
                             color: Colors.white,
                             borderRadius: BorderRadius.circular(12)),
