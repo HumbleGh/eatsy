@@ -17,10 +17,15 @@ class WelcomeScreen extends StatefulWidget {
 class _WelcomeScreenState extends State<WelcomeScreen> {
   @override
   Widget build(BuildContext context) {
-    return SafeArea(
-      child: Scaffold(
-          backgroundColor: Colors.blue[700],
-          body: Column(
+    return Scaffold(
+        backgroundColor: Colors.blue[700],
+        bottomSheet: BottomNavigationBar(items: const [
+          BottomNavigationBarItem(icon: Icon(Icons.home), label: 'Home'),
+          BottomNavigationBarItem(icon: Icon(Icons.search), label: 'Search'),
+          BottomNavigationBarItem(icon: Icon(Icons.person), label: 'Profile'),
+        ]),
+        body: SafeArea(
+          child: Column(
             children: [
               Container(
                 padding: EdgeInsets.symmetric(
@@ -102,26 +107,41 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
               ),
               Gap(AppLayout.getHeight(30)),
               Expanded(
-                child: Container(
-                  padding:
-                      EdgeInsets.symmetric(vertical: AppLayout.getHeight(30)),
-                  decoration: const BoxDecoration(
-                      borderRadius:
-                          BorderRadius.vertical(top: Radius.circular(24)),
-                      color: Color.fromARGB(255, 222, 222, 222)),
-                  child: Column(
-                    children: [
-                      const TextMore(
-                        text: 'Exercises',
-                        isColorWhite: false,
+                  child: Container(
+                padding:
+                    EdgeInsets.symmetric(vertical: AppLayout.getHeight(30)),
+                decoration: const BoxDecoration(
+                    borderRadius:
+                        BorderRadius.vertical(top: Radius.circular(24)),
+                    color: Color.fromARGB(255, 238, 238, 238)),
+                child: SingleChildScrollView(
+                  // Wrap the entire content with a SingleChildScrollView
+                  child: Column(children: [
+                    const TextMore(
+                      text: 'Exercises',
+                      isColorWhite: false,
+                    ),
+                    Gap(AppLayout.getHeight(20)),
+                    Container(
+                        child: Scrollbar(
+                      // Wrap the ListView with a Scrollbar
+                      child: ListView(
+                        shrinkWrap: true, // Add this line
+                        children: [
+                          ExerciseTile(title: 'Yeah', exercise: 12),
+                          Gap(AppLayout.getHeight(12)),
+                          ExerciseTile(title: 'Yeah', exercise: 12),
+                          Gap(AppLayout.getHeight(12)),
+                          ExerciseTile(title: 'Yeah', exercise: 12),
+                          Gap(AppLayout.getHeight(12)),
+                        ],
                       ),
-                      Gap(AppLayout.getHeight(20)),
-                    ],
-                  ),
+                    ))
+                  ]),
                 ),
-              ),
+              )),
             ],
-          )),
-    );
+          ),
+        ));
   }
 }
